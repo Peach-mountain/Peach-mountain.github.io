@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zhishan Tao — PhD student at Shanghai Jiao Tong University. Research in multimodal large language models, agentic reinforcement learning, and interpretable AI.">
+  <title>Zhishan Tao / Homepage</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead"><div class="nav-inner"><a class="brand" href="index.html">Zhishan Tao / Homepage</a><nav class="navigation" aria-label="Main navigation"><a href="#research">Publications</a><a href="cv.html">CV</a><a href="#education">Experience</a><a href="#contact">Contact</a></nav></div></header>
+<div class="layout">
+  <aside class="author" aria-label="About the author">
+    <img class="portrait" src="assets/portrait.jpg?v=huiye" alt="Zhishan Tao's illustrated avatar" width="174" height="174">
+    <h1>Zhishan Tao <span class="chinese-name" lang="zh-CN">陶芷姗</span></h1>
+    <p class="bio">PhD Student @ SJTU<br>MLLM · Agentic RL<br>Interpretable AI</p>
+    <ul class="author-links">
+      <li class="location"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Shanghai, China</li>
+      <li><a href="mailto:zhishantao@sjtu.edu.cn"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>Email</a></li>
+      <li><a href="cv.html"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6Z M14 3v5h5 M9 12h7 M9 16h7"/></svg>Curriculum Vitae</a></li>
+      <li><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=I8HT--kAAAAJ"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5Z M6 11v6c4 3 8 3 12 0v-6 M22 9v8"/></svg>Google Scholar</a></li>
+      <li><a href="#research"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h7l2 2 2-2h7v15h-7l-2 2-2-2H3Z M12 7v15"/></svg>Research Projects</a></li>
+    </ul>
+  </aside>
+  <main id="main" class="content">
+    <section class="intro" aria-label="Introduction">
+      <h2 class="welcome">Welcome to my homepage!</h2>
+      <p>I am a PhD student in Computer Science at <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.</p>
+      <p>I received my bachelor's degree from <a href="https://www.bupt.edu.cn/">Beijing University of Posts and Telecommunications</a> in 2026.</p>
+      <p>My research focuses on <strong>Multimodal Large Language Models (MLLMs)</strong>, <strong>Agentic RL</strong>, and <strong>Interpretable AI</strong>.</p>
+      <p>I study <a href="projects/cara.html">interpretable prediction</a>, <a href="projects/laser.html">hallucination mitigation</a>, and <a href="projects/eviloop-ad.html">diagnostic evidence verification</a>.</p>
+    </section>
+    <section class="section" aria-labelledby="news-title"><h2 id="news-title">News</h2><div class="news-item"><span class="news-date">2026</span>Our paper <a href="projects/cara.html"><strong>CARA</strong></a> has been accepted to <strong>ACM Multimedia 2026</strong>!</div></section>
+    <section id="education" class="section" aria-labelledby="education-title">
+      <h2 id="education-title">Experience</h2>
+      <div class="education-grid">
+        <article class="education-card"><img class="school-logo" src="assets/sjtu-logo.png?v=blue-round" alt="Shanghai Jiao Tong University emblem" width="58" height="58"><div><h3>Shanghai Jiao Tong University</h3><p class="date">Sep. 2026 – Present</p><p>PhD in Computer Science</p></div></article>
+        <article class="education-card"><img class="school-logo" src="assets/bupt-logo.png" alt="Beijing University of Posts and Telecommunications emblem" width="58" height="58"><div><h3>Beijing University of Posts<br>and Telecommunications</h3><p class="date">Sep. 2022 – Jun. 2026</p><p>Rank 1/107</p><p><strong>National Scholarship Twice</strong></p></div></article>
+      </div>
+    </section>
+    <section id="research" class="section" aria-labelledby="research-title">
+      <h2 id="research-title">Publications</h2>
+      <p class="section-note">Selected papers &amp; ongoing research</p>
+      <div class="filters" role="group" aria-label="Filter research projects"><button type="button" class="filter" data-filter="all" aria-pressed="true">All</button><button type="button" class="filter" data-filter="multimodal" aria-pressed="false">Multimodal</button><button type="button" class="filter" data-filter="agents" aria-pressed="false">Agents</button><button type="button" class="filter" data-filter="interpretability" aria-pressed="false">Interpretability</button></div>
+      <span id="filter-status" role="status" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">3 projects shown</span>
+      <div class="research-list">
+        <article class="paper-card featured" data-topics="multimodal interpretability">
+          <a class="paper-image" href="projects/cara.html" tabindex="-1" aria-hidden="true"><img src="assets/cara-framework.webp" alt="" width="200" height="110" loading="lazy"></a>
+          <div class="paper-content"><h3><a href="projects/cara.html">CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation</a></h3><p class="authors"><strong>Zhishan Tao</strong>, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan, Sherwin Ho, Yue Su, Jinbo Su, Yi Hong<sup title="Corresponding author">†</sup></p><p class="paper-summary">From accident reports to grounded risk concepts: anticipating collisions with explicit spatiotemporal evidence.</p><p class="venue">ACM Multimedia 2026 <span class="venue-detail">· Accepted · First author</span></p><div class="paper-links"><a href="projects/cara.html">[Website]</a><a href="https://doi.org/10.1145/3767308.3835419">[Paper]</a><a href="projects/cara.html#visualizations">[Visualizations]</a></div><p class="code-status" lang="zh-CN">Code：整理中，即将开源</p></div>
+        </article>
+        <article class="paper-card" data-topics="multimodal interpretability">
+          <a class="paper-image" href="projects/laser.html" tabindex="-1" aria-hidden="true"><img src="assets/laser-framework.webp" alt="" width="200" height="90" loading="lazy"></a>
+          <div class="paper-content"><h3><a href="projects/laser.html">LASER: Layer-Wise Arbitration of Supported Evidence via Internal Correctability Estimation for Reliable Multimodal Decoding</a></h3><p class="authors"><strong>Zhishan Tao</strong> <span class="author-status" lang="zh-CN">（完整作者名单待确认）</span></p><p class="paper-summary">Training-free, token-level arbitration: correct only when revision is needed and cross-layer evidence supports it.</p><p class="venue">Manuscript <span class="venue-detail">· 2026 · First author</span></p><div class="paper-links"><a href="projects/laser.html">[Website]</a><a href="projects/laser.html#visualizations">[Visualizations]</a></div><p class="code-status" lang="zh-CN">Code：整理中，即将开源</p></div>
+        </article>
+        <article class="paper-card" data-topics="multimodal agents">
+          <a class="paper-image" href="projects/eviloop-ad.html" tabindex="-1" aria-hidden="true"><img src="assets/ad-backbone.webp" alt="" width="200" height="125" loading="lazy"></a>
+          <div class="paper-content"><h3><a href="projects/eviloop-ad.html">EviLoop-AD: Evidence-Grounded Diagnostic Agent for Alzheimer’s Disease</a></h3><p class="authors"><strong>Zhishan Tao</strong> · Research project</p><p class="paper-summary">A patient evidence ledger, local verification, and auditable bounded state transitions for multimodal diagnostic support.</p><p class="venue">Ongoing research · 2026</p><div class="paper-links"><a href="projects/eviloop-ad.html">[Project]</a><a href="projects/eviloop-ad.html#architecture">[Architecture]</a><a href="projects/eviloop-ad.html#evaluation">[Evaluation]</a></div><p class="code-status" lang="zh-CN">Code：整理中，即将开源</p></div>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="section" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p class="contact-note">I welcome discussions about MLLMs, Agentic RL, and Interpretable AI.<br>Email: <a href="mailto:zhishantao@sjtu.edu.cn">zhishantao@sjtu.edu.cn</a></p></section>
+  </main>
+</div>
+<footer class="footer"><p>© 2026 Zhishan Tao. Last updated: September 2026.</p><p>Layout inspired by <a href="https://selen-suyue.github.io/">Selen Su’s academic homepage</a>. Independently implemented in HTML &amp; CSS.</p></footer>
+</body></html>

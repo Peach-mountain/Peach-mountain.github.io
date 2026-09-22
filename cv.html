@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="陶芷姗 Zhishan Tao — 教育背景、论文、科研经历与专业技能。">
+  <title>CV | Zhishan Tao</title>
+  <link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="styles.css">
+</head>
+<body class="resume-view">
+<a class="skip-link" href="#main">跳转至简历</a>
+<a class="resume-back" href="index.html">← Homepage</a>
+<main id="main" class="resume-sheet">
+  <header class="resume-header">
+    <h1>Zhishan Tao <span>陶芷姗</span></h1>
+    <div class="resume-contact"><a href="mailto:zhishantao@sjtu.edu.cn">zhishantao@sjtu.edu.cn</a><span aria-hidden="true">·</span><a href="index.html">Homepage</a><span aria-hidden="true">·</span><a href="https://github.com/Peach-mountain">GitHub</a><span aria-hidden="true">·</span><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=I8HT--kAAAAJ">Google Scholar</a></div>
+    <p class="resume-focus">MLLM · Agentic RL · Interpretable AI</p>
+  </header>
+  <section class="resume-section">
+    <h2>Education <span>教育背景</span></h2>
+    <article class="resume-education"><img src="assets/sjtu-logo.png?v=blue-round" alt="上海交通大学校徽" width="36" height="36"><div><h3>上海交通大学 · Shanghai Jiao Tong University</h3><p>计算机科学与技术 · 博士在读</p></div><div class="resume-place">Shanghai, China<time>2026.09 – 至今</time></div></article>
+    <article class="resume-education"><img src="assets/bupt-logo.png" alt="北京邮电大学校徽" width="36" height="36"><div><h3>北京邮电大学 · Beijing University of Posts and Telecommunications</h3><p>电子信息科学与技术 · 工学学士</p></div><div class="resume-place">Beijing, China<time>2022.09 – 2026.06</time></div></article>
+  </section>
+  <section class="resume-section">
+    <h2>Selected Publications <span>论文</span></h2>
+    <article class="resume-publication">
+      <h3><a href="projects/cara.html">CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation</a></h3>
+      <p class="authors"><strong>Zhishan Tao</strong>, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan, Sherwin Ho, Yue Su, Jinbo Su, Yi Hong<sup title="Corresponding author">†</sup></p>
+      <p class="venue">ACM Multimedia 2026 · Accepted · First author <a href="https://doi.org/10.1145/3767308.3835419">[Paper]</a></p>
+    </article>
+    <article class="resume-publication">
+      <h3><a href="projects/laser.html">LASER: Layer-Wise Arbitration of Supported Evidence via Internal Correctability Estimation for Reliable Multimodal Decoding</a></h3>
+      <p class="authors"><strong>Zhishan Tao</strong> <span class="author-status">（完整作者名单待确认）</span></p>
+      <p class="venue">Manuscript · 2026 · First author</p>
+    </article>
+  </section>
+  <section class="resume-section">
+    <h2>Research Experience <span>科研项目</span></h2>
+    <article class="resume-project"><h3><a href="projects/cara.html">CARA：概念驱动的碰撞预判系统</a></h3><p class="section-note">2025.10 – 2026.04 · 视觉语言对齐 / 时空风险建模 / 可解释预测</p><p>针对碰撞预判依赖隐式时空特征、难以兼顾提前预警与解释忠实度的问题，构建以可定位风险概念驱动时空注意力的碰撞预判系统。</p><ul><li><strong>数据与概念构建：</strong>清洗804份DMV事故报告，抽取约1,840个候选概念，经安全场景补充与筛选构建<strong>210个风险及安全驾驶概念</strong>的Concept Bank。</li><li><strong>模型架构设计：</strong>串联<strong>CLIP语义对齐、可学习校准与EMA时序稳定</strong>，设计概念条件化Spatial / Temporal Risk Attention，在GRU融合中持续注入概念证据。</li><li><strong>训练与实验评测：</strong>联合优化碰撞预测、概念一致性与稀疏性目标，完成多数据集和概念干预实验；DAD上相比CRASH，AP提升<strong>4.86个百分点</strong>，mTTA提升至<strong>1.97秒</strong>。</li></ul><p class="venue">ACM Multimedia 2026 已录用｜第一作者</p></article>
+<article class="resume-project"><h3><a href="projects/eviloop-ad.html">EviLoop-AD：多模态诊断Agent系统</a></h3><p class="section-note">2026.07 – 至今 · Evidence Verification / Visual Grounding / State Transition</p><p>针对一次性诊断难以处理证据缺失与影像—临床冲突的问题，设计融合证据查证、局部验证与受控状态转移的阿尔茨海默病辅助诊断Agent。</p><ul><li><strong>Agent Harness &amp; Context Engineering：</strong>设计并实现患者级<strong>证据账本、规则/ROI验证与可审计的有界状态转移</strong>；组织诊断、查证与反馈修正流程，关联MRI区域、临床事实与候选诊断，并维护证据来源和更新状态。</li><li><strong>诊断训练与可靠性评测：</strong>完成多模态表征训练与<strong>diagnosis-only SFT</strong>；在1,234名患者、5,040次visits的五折OOF影子评测中，GEST接受254次相邻状态转移，净修正<strong>+227</strong>，Macro-F1提升<strong>3.89个百分点</strong>。</li></ul></article>
+<article class="resume-project"><h3><a href="projects/laser.html">LASER：跨层证据驱动的选择性解码</a></h3><p class="section-note">2026.03 – 2026.07 · 幻觉缓解 / Internal Correctability / Training-free</p><p>针对层间解码将分布差异直接视为有效修正、易干扰正确输出的问题，构建联合评估修正需求与候选可靠性的逐Token选择性解码方法。</p><ul><li><strong>Internal Correctability &amp; Selective Fusion：</strong>以<strong>JSD</strong>度量修正需求，结合<strong>跨层支持度与方向优势</strong>评估证据效用，通过双条件门控与自适应概率融合实现选择性干预，门控关闭时保留原分布。</li><li><strong>推理实现与实验评测：</strong>完成跨层候选提取、条件门控与融合的端到端实现，接入<strong>5类MLLM、4项Benchmark</strong>及多种生成策略，开展组件消融与逐Token诊断，验证幻觉缓解效果。</li></ul></article>
+  </section>
+  <section class="resume-section resume-skills">
+    <h2>Technical Skills <span>专业技能</span></h2>
+    <p><strong>多模态建模：</strong>视觉语言对齐、MRI与文本表征融合、时空注意力、概念建模、可解释性与多模态评测。</p><p><strong>Agent与可靠推理：</strong>Agent Harness、Context Engineering、Visual Grounding、证据验证、受控状态转移、选择性解码与幻觉分析。</p><p><strong>训练与工程：</strong>Python、PyTorch、SFT、LoRA、冻结骨干与参数高效训练、推理链路实现、消融实验、患者隔离与OOF评测。</p>
+  </section>
+  <footer class="resume-footer">Last updated: September 2026</footer>
+</main>
+</body>
+</html>

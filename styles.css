@@ -19,11 +19,11 @@ sup { font-size: .75em; line-height: 0; }
 .skip-link { position: fixed; top: -70px; left: 20px; z-index: 10; padding: 8px 15px; background: #fff; }
 .skip-link:focus { top: 8px; }
 .masthead { position: sticky; top: 0; background: #fff; z-index: 5; border-bottom: 1px solid #edf2f3; }
-.nav-inner { max-width: min(1920px, calc(100% - 64px)); margin: auto; min-height: 70px; display: flex; align-items: center; gap: 30px; }
+.nav-inner { max-width: min(1480px, calc(100% - 96px)); margin: auto; min-height: 70px; display: flex; align-items: center; gap: 30px; }
 .brand { width: 236px; flex-shrink: 0; font: italic 700 18px/1.5 var(--hand); color: #526e73; white-space: nowrap; }
 .navigation { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
 .navigation a { font: italic 19px/1.5 var(--hand); color: #4c7077; }
-.layout { max-width: min(1920px, calc(100% - 64px)); margin: 36px auto 0; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 40px; }
+.layout { max-width: min(1480px, calc(100% - 96px)); margin: 36px auto 0; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 40px; }
 .content { min-width: 0; }
 .author { position: sticky; top: 104px; align-self: start; }
 .portrait { width: 174px; height: 174px; object-fit: cover; object-position: center 28%; border-radius: 50%; padding: 4px; border: 1px solid var(--line); }
@@ -86,7 +86,7 @@ sup { font-size: .75em; line-height: 0; }
 .awards-list time { min-width: 78px; color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
 .awards-list strong { color: var(--ink); font-weight: 650; }
 .award-category { margin-left: auto; color: var(--muted); font-size: 13px; }
-.footer { max-width: min(1920px, calc(100% - 64px)); margin: 46px auto 0; border-top: 1px solid var(--line); padding: 20px 0 28px; font-size: 13px; color: #76878e; }
+.footer { max-width: min(1480px, calc(100% - 96px)); margin: 46px auto 0; border-top: 1px solid var(--line); padding: 20px 0 28px; font-size: 13px; color: #76878e; }
 .footer p { margin: 2px 0; }
 
 /* Research pages: preserve figure viewing and audit details. */

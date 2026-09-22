@@ -89,7 +89,7 @@ img { display: block; max-width: 100%; }
 .work-card:hover { transform: translateY(-7px); box-shadow: var(--shadow); }
 .work-card-head { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 11px; font-weight: 780; letter-spacing: .11em; text-transform: uppercase; }
 .work-card-head span:first-child { color: var(--accent); }
-.work-card-media { height: clamp(126px,19vh,205px); margin: 14px 0 22px; display: grid; place-items: center; background: white; }
+.work-card-media { height: clamp(126px,19vh,205px); margin: 14px 0 22px; display: block; overflow: hidden; background: white; }
 .work-card-media img { width: 100%; height: 100%; object-fit: contain; }
 .work-card h3 { margin: 0 0 12px; font-size: clamp(22px,2vw,31px); line-height: 1; letter-spacing: -.035em; }
 .work-card p { margin: 0; color: var(--muted); font-size: clamp(14px,1.1vw,18px); line-height: 1.42; }

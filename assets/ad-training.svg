@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">EviLoop-AD: SFT followed by RFT using GRPO</title>
+  <desc id="desc">MRI and clinical evidence inform an agent. SFT teaches agent behavior. RFT uses GRPO for policy optimization. The agent verifies evidence, uses tools and updates diagnostic state.</desc>
+  <rect width="720" height="360" fill="#fffdfc"/>
+  <g font-family="Helvetica,Arial,sans-serif" text-anchor="middle">
+    <text x="360" y="46" fill="#6b7280" font-size="21">MRI + clinical evidence</text>
+    <path d="M360 65v28m-7-7 7 7 7-7" fill="none" stroke="#9bbddd" stroke-width="2"/>
+    <rect x="47" y="111" width="260" height="139" fill="#eff5fa" stroke="#9bbddd"/>
+    <rect x="413" y="111" width="260" height="139" fill="#fcf1ed" stroke="#e7b8ac"/>
+    <text x="177" y="164" fill="#6f8eae" font-size="39" font-weight="700">SFT</text>
+    <text x="177" y="207" fill="#6b7280" font-size="19">Agent behavior</text>
+    <path d="M326 180h67m-10-8 10 8-10 8" fill="none" stroke="#6f8eae" stroke-width="2.5"/>
+    <text x="543" y="158" fill="#ca6f6f" font-size="37" font-weight="700">RFT</text>
+    <text x="543" y="190" fill="#ca6f6f" font-size="20">with GRPO</text>
+    <text x="543" y="224" fill="#6b7280" font-size="18">Policy optimization</text>
+    <text x="360" y="308" fill="#6b7280" font-size="19">Verify evidence · Use tools · Update state</text>
+  </g>
+</svg>

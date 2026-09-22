@@ -71,19 +71,19 @@ img { display: block; max-width: 100%; }
 .education-layout { display: grid; grid-template-columns: minmax(0,2.3fr) minmax(210px,.7fr); gap: clamp(24px,4vw,64px); }
 .experience-line { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
 .exp-item { position: relative; min-width: 0; }
-.exp-item:first-child::after { content: ""; position: absolute; top: 50px; left: 120px; right: -17px; height: 2px; opacity: .48; background: repeating-linear-gradient(90deg,var(--accent) 0 12px,transparent 12px 21px); background-size: 21px 2px; }
+.exp-item:first-child::after { content: ""; position: absolute; top: 80px; left: 180px; right: -17px; height: 2px; opacity: .48; background: repeating-linear-gradient(90deg,var(--accent) 0 12px,transparent 12px 21px); background-size: 21px 2px; }
 .active .exp-item:first-child::after { animation: connector-flow .9s linear infinite; }
-.exp-logo { position: relative; width: 100px; height: 100px; display: grid; place-items: center; border-radius: 50%; background: #fff; border: 1px solid var(--line); box-shadow: 0 12px 30px rgba(58,48,52,.08); }
+.exp-logo { position: relative; width: 160px; height: 160px; display: grid; place-items: center; border-radius: 50%; background: #fff; border: 1px solid var(--line); box-shadow: 0 12px 30px rgba(58,48,52,.08); }
 .exp-logo::after { content: ""; position: absolute; inset: -7px; border: 1px dashed rgba(111,142,174,.30); border-radius: 50%; }
 .active .exp-logo::after { animation: orbit 7s linear infinite; }
-.exp-logo img { width: 74px; height: 74px; object-fit: contain; }
-.exp-item time { display: block; margin-top: 30px; color: var(--accent); font-size: 12px; font-weight: 760; letter-spacing: .08em; text-transform: uppercase; }
-.exp-item h3 { margin: 10px 0; font-size: clamp(20px,1.8vw,28px); line-height: 1.13; letter-spacing: -.025em; }
-.exp-item p { margin: 0; color: var(--muted); font-size: clamp(14px,1.08vw,18px); line-height: 1.5; }
-.exp-item .achievement { margin-top: 18px; font-size: clamp(12px,.88vw,15px); }
-.exp-item .award-dates { font-size: 12px; margin-top: 4px; }
+.exp-logo img { width: 126px; height: 126px; object-fit: contain; }
+.exp-item time { display: block; margin-top: 32px; color: var(--accent); font-size: 14px; font-weight: 760; letter-spacing: .08em; text-transform: uppercase; }
+.exp-item h3 { margin: 12px 0; font-size: clamp(24px,2vw,32px); line-height: 1.13; letter-spacing: -.025em; }
+.exp-item p { margin: 0; color: var(--muted); font-size: clamp(16px,1.2vw,20px); line-height: 1.5; }
+.exp-item .achievement { margin-top: 18px; font-size: clamp(13px,1vw,16px); }
+.exp-item .award-dates { font-size: 13px; margin-top: 5px; }
 .research-interests { border-left: 2px solid var(--coral); padding: 8px 0 8px 26px; }
-.research-interests p { font-size: clamp(18px,1.65vw,27px); line-height: 1.2; letter-spacing: -.025em; margin: 24px 0 0; }
+.research-interests p { font-size: clamp(20px,1.8vw,29px); line-height: 1.2; letter-spacing: -.025em; margin: 24px 0 0; }
 .work-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(12px,1.5vw,24px); align-items: stretch; align-self: center; }
 .work-card { min-width: 0; padding: 17px 17px 23px; border: 1px solid var(--line); background: rgba(255,255,255,.72); transition: transform .32s var(--ease), box-shadow .32s var(--ease); }
 .work-card:hover { transform: translateY(-7px); box-shadow: var(--shadow); }
@@ -268,8 +268,8 @@ img { display: block; max-width: 100%; }
   .slide-foot > span:last-child { flex-shrink: 0; }
   .experience-line { grid-template-columns: 1fr; gap: 38px; }
   .exp-item:first-child::after { display: none; }
-  .exp-logo { width: 76px; height: 76px; }
-  .exp-logo img { width: 57px; height: 57px; }
+  .exp-logo { width: 128px; height: 128px; }
+  .exp-logo img { width: 100px; height: 100px; }
   .exp-item time { margin-top: 22px; }
   .exp-item h3 { font-size: 23px; }
   .exp-item .achievement { font-size: 12px; }

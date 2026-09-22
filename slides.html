@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fffdfc">
+  <meta name="description" content="Zhishan Tao’s research slides: CARA, EviLoop-AD and LASER. Interpretable prediction, evidence-grounded agents and reliable multimodal decoding.">
+  <title>Zhishan Tao · Research Slides</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="slides.css?v=20260922-1">
+  <script src="slides.js?v=20260922-1" defer></script>
+</head>
+<body>
+<main class="deck" aria-label="Research presentation">
+  <section class="slide hero active" id="slide-1" data-title="Opening" aria-labelledby="opening-title">
+    <div class="slide-body opening-composition">
+      <div class="name-stage">
+        <p class="hero-kicker reveal">Research presentation <span>2026</span></p>
+        <div class="name-lockup reveal"><h1 id="opening-title" class="hero-name">Zhishan <em>Tao</em></h1></div>
+        <div class="hero-intro reveal"><p class="hero-thesis">Reliable &amp; interpretable<br><span class="accent">multimodal intelligence</span></p><p class="hero-meta">PhD Student, Shanghai Jiao Tong University</p><p class="hero-directions">MLLMs <span>Agentic RL</span> Interpretable AI</p></div>
+      </div>
+      <div class="hero-orbit reveal" aria-label="Portrait of Zhishan Tao"><span class="orbit-line" aria-hidden="true"></span><img class="portrait" src="assets/slides-portrait.jpg" width="618" height="875" alt="Zhishan Tao"><i class="orbit-dot one" aria-hidden="true"></i><i class="orbit-dot two" aria-hidden="true"></i></div>
+    </div>
+    <footer class="slide-foot"><a href="index.html">Homepage ↗</a><span>Zhishan Tao / 陶芷姗</span></footer>
+  </section>
+
+  <section class="slide" id="slide-2" data-title="Experience" aria-labelledby="experience-title">
+    <header><div class="eyebrow reveal">Experience</div><h2 class="slide-title reveal" id="experience-title">Education &amp;<br><span class="accent">research interests</span></h2></header>
+    <div class="slide-body education-layout">
+      <div class="experience-line reveal">
+        <article class="exp-item"><div class="exp-logo"><img src="assets/bupt-logo.png" alt="BUPT emblem" width="90" height="90"></div><time>Sep. 2022 – Jun. 2026</time><h3>Beijing University of Posts<br>and Telecommunications</h3><p>B.Eng. in Electronic Information Science and Technology</p><p class="achievement"><b>Rank 1/107</b> · <b>National Scholarship Twice</b></p><p class="award-dates">December 2023 &amp; 2024</p></article>
+        <article class="exp-item"><div class="exp-logo"><img src="assets/sjtu-logo.png" alt="SJTU emblem" width="90" height="90"></div><time>Sep. 2026 – Present</time><h3>Shanghai Jiao Tong<br>University</h3><p>PhD in Computer Science</p></article>
+      </div>
+      <div class="research-interests reveal"><span class="small-label">Research interests</span><p>Multimodal Large<br>Language Models</p><p>Agentic RL</p><p>Interpretable AI</p></div>
+    </div>
+    <footer class="slide-foot"><a href="cv.html">Curriculum vitae ↗</a><span>02</span></footer>
+  </section>
+
+  <section class="slide rose" id="slide-3" data-title="Selected works" aria-labelledby="works-title">
+    <header><div class="eyebrow reveal">Selected works</div><h2 class="slide-title reveal" id="works-title">Evidence for<br><span class="accent">multimodal decisions</span></h2></header>
+    <div class="slide-body work-cards">
+      <a class="work-card reveal" href="#slide-4"><div class="work-card-head"><span>01</span><span>CARA</span></div><div class="work-card-media"><img src="assets/cara-framework.webp" alt="CARA framework" width="2706" height="1418"></div><h3>Interpretable prediction</h3><p>Ground collision anticipation in human-readable risk concepts.</p><span class="work-status">ACM Multimedia 2026 · First author</span></a>
+      <a class="work-card reveal" href="#slide-7"><div class="work-card-head"><span>02</span><span>EviLoop-AD</span></div><div class="work-card-media"><img src="assets/ad-backbone.webp" alt="AD multimodal backbone" width="1089" height="590"></div><h3>Evidence-grounded agents</h3><p>Verify patient evidence before accepting a diagnostic state transition.</p><span class="work-status">Ongoing research</span></a>
+      <a class="work-card reveal" href="#slide-10"><div class="work-card-head"><span>03</span><span>LASER</span></div><div class="work-card-media"><img src="assets/laser-framework.webp" alt="LASER method" width="1455" height="654"></div><h3>Reliable decoding</h3><p>Revise a token only when cross-layer evidence supports correction.</p><span class="work-status">AAAI · Under review · First author</span></a>
+    </div>
+    <footer class="slide-foot"><span>Prediction / Verification / Correction</span><span>03</span></footer>
+  </section>
+
+  <section class="slide coral" id="slide-4" data-title="CARA · Motivation" aria-labelledby="cara-motivation-title">
+    <header><div class="eyebrow reveal">CARA · 01 / 03</div><h2 class="slide-title reveal" id="cara-motivation-title">Collision anticipation with<br><span class="accent">visible risk concepts</span></h2></header>
+    <div class="slide-body concept-layout">
+      <figure class="media-frame reveal"><button class="zoom-image" type="button" aria-label="Enlarge CARA concept visualization"><img src="assets/cara-concepts.webp" alt="Video frames and localized driving concepts with their risk responses" width="1580" height="1200"></button></figure>
+      <div class="editorial-copy"><div class="reveal"><span class="small-label">The problem</span><h3>A risk score needs<br>an explanation</h3><p>Implicit video features make it difficult to inspect which scene evidence drives an early warning.</p></div><div class="reveal"><span class="small-label">My contribution</span><h3>210 grounded concepts</h3><p>I built a risk and safe-driving concept bank from <strong>804 DMV reports</strong> and about <strong>1,840 initial candidates</strong>.</p></div></div>
+    </div>
+    <footer class="slide-foot"><a href="projects/cara.html">CARA project ↗</a><span>04</span></footer>
+  </section>
+
+  <section class="slide" id="slide-5" data-title="CARA · Method" aria-labelledby="cara-method-title">
+    <header><div class="eyebrow reveal">CARA · 02 / 03</div><h2 class="slide-title reveal" id="cara-method-title">Concepts guide<br><span class="accent">spatial &amp; temporal attention</span></h2></header>
+    <div class="slide-body method-grid">
+      <figure class="media-frame reveal"><button class="zoom-image" type="button" aria-label="Enlarge CARA framework"><img src="assets/cara-framework.webp" alt="CARA framework: concept activation, risk-aware attention and collision prediction" width="2706" height="1418"></button></figure>
+      <div class="method-notes">
+        <div class="method-note reveal"><b>01 · Grounding</b><h3>Concept activation</h3><p>CLIP alignment, learnable calibration and EMA temporal stabilization.</p></div>
+        <div class="method-note reveal"><b>02 · Modeling</b><h3>Risk-aware attention</h3><p>Concepts condition spatial and temporal attention, with evidence injected into GRU fusion.</p></div>
+        <div class="method-note reveal"><b>03 · Learning</b><h3>Faithful prediction</h3><p>Joint prediction, concept consistency and sparsity objectives, tested with concept interventions.</p></div>
+      </div>
+    </div>
+    <footer class="slide-foot"><a href="https://arxiv.org/abs/2607.22494">ACM Multimedia 2026 · Accepted · First author ↗</a><span>05</span></footer>
+  </section>
+
+  <section class="slide" id="slide-6" data-title="CARA · Results" aria-labelledby="cara-results-title">
+    <header><div class="eyebrow reveal">CARA · 03 / 03</div><h2 class="slide-title reveal" id="cara-results-title">Earlier warnings with<br><span class="accent">inspectable evidence</span></h2></header>
+    <div class="slide-body results-layout">
+      <figure class="media-frame reveal"><button class="zoom-image" type="button" aria-label="Enlarge CARA timeline results"><img src="assets/cara-timeline.webp" alt="Three driving scenes with synchronized video frames, collision times and predicted risk curves" width="1901" height="1350"></button></figure>
+      <div class="metric-stack"><div class="big-metric reveal"><span class="small-label">DAD · Average precision</span><strong>75.37<span>%</span></strong><p><b>+4.86 pp</b> over CRASH (70.51%)</p></div><div class="big-metric reveal"><span class="small-label">DAD · Mean time-to-accident</span><strong>1.97<span>s</span></strong><p><b>+0.19 s</b> over CRASH (1.78 s)</p></div><p class="result-caption reveal">Frame-aligned risk curves show when an alert emerges. Concept responses make its visual evidence inspectable.</p></div>
+    </div>
+    <footer class="slide-foot"><a href="projects/cara.html#visualizations">CARA paper figures &amp; DAD comparison ↗</a><span>06</span></footer>
+  </section>
+
+  <section class="slide rose" id="slide-7" data-title="EviLoop-AD · Multimodal diagnosis" aria-labelledby="ad-core-title">
+    <header><div class="eyebrow reveal">EviLoop-AD · 01 / 03</div><h2 class="slide-title reveal" id="ad-core-title">Multimodal diagnosis,<br><span class="accent">grounded in patient evidence</span></h2></header>
+    <div class="slide-body method-grid">
+      <div class="reveal"><figure class="media-frame"><button class="zoom-image" type="button" aria-label="Enlarge AD backbone reference"><img src="assets/ad-backbone.webp" alt="AD backbone reference architecture with MRI and clinical text representations" width="1089" height="590"></button></figure><p class="figure-caption">Backbone reference figure. The current Core uses diagnosis-only output, not free-form reasoning.</p></div>
+      <div class="method-notes"><div class="method-note reveal"><b>Challenge</b><h3>Incomplete evidence</h3><p>A one-shot diagnosis cannot resolve missing records or imaging–clinical conflicts.</p></div><div class="method-note reveal"><b>Multimodal Core</b><h3>MRI + clinical text</h3><p>768-D MRI and 768-D text embeddings, with a 3-D prior.</p></div><div class="method-note reveal"><b>My implementation</b><h3>PT &amp; diagnosis-only SFT</h3><p>Align representations to CN / MCI / AD. Train projection and LLaMA LoRA / norm / bias with frozen upstream encoders during SFT.</p></div></div>
+    </div>
+    <footer class="slide-foot"><a href="projects/eviloop-ad.html">EviLoop-AD · Research project ↗</a><span>07</span></footer>
+  </section>
+
+  <section class="slide" id="slide-8" data-title="EviLoop-AD · Agent workflow" aria-labelledby="ad-agent-title">
+    <header><div class="eyebrow reveal">EviLoop-AD · 02 / 03</div><h2 class="slide-title reveal" id="ad-agent-title">Verification before<br><span class="accent">a diagnostic state transition</span></h2><p class="slide-lede reveal">Agent Harness connects the patient evidence ledger to local verification and bounded decisions.</p></header>
+    <div class="slide-body agent-body">
+      <ol class="agent-flow" aria-label="Four-stage diagnostic agent workflow">
+        <li class="agent-step reveal"><span class="step-number">01</span><span class="small-label">Context engineering</span><h3>Evidence<br>readiness</h3><p>Patient ledger<br>Source, visit time &amp; missingness</p></li>
+        <li class="agent-step reveal"><span class="step-number">02</span><span class="small-label">Multimodal Core</span><h3>Initial<br>diagnosis</h3><p>MRI + clinical text<br>CN / MCI / AD</p></li>
+        <li class="agent-step reveal"><span class="step-number">03</span><span class="small-label">Evidence verification</span><h3>Rules &amp;<br>ROI checks</h3><p>Visual Grounding<br>Conflicts &amp; candidate support</p></li>
+        <li class="agent-step reveal"><span class="step-number">04</span><span class="small-label">GEST</span><h3>Bounded<br>transition</h3><p>Keep / adjacent change / abstain<br>Auditable decision record</p></li>
+      </ol>
+      <div class="feedback-loop reveal"><span class="feedback-arrow" aria-hidden="true">↶</span><p><strong>Active Investigation</strong><br>Record review, knowledge retrieval and MRI tools return evidence to local verification.</p><span class="feedback-label">Evidence feedback</span></div>
+      <p class="scope-note reveal">Architecture schematic. The following results evaluate GEST in shadow mode, not the full external-tool workflow.</p>
+    </div>
+    <footer class="slide-foot"><a href="projects/eviloop-ad.html#architecture">Patient evidence ledger / Verification / Audit ↗</a><span>08</span></footer>
+  </section>
+
+  <section class="slide" id="slide-9" data-title="EviLoop-AD · Shadow evaluation" aria-labelledby="ad-results-title">
+    <header><div class="eyebrow reveal">EviLoop-AD · 03 / 03</div><h2 class="slide-title reveal" id="ad-results-title">GEST shadow evaluation:<br><span class="accent">227 net additional correct predictions</span></h2><p class="slide-lede reveal">1,234 ADNI development patients · 5,040 visits · Patient-grouped five-fold OOF</p></header>
+    <div class="slide-body gest-layout">
+      <div class="gest-outcomes reveal"><span class="small-label">254 accepted adjacent-state transitions</span><div class="outcome"><span>Wrong → correct</span><strong>239</strong><div class="bar-track"><span class="bar positive" style="--value:94.0945%"></span></div></div><div class="outcome"><span>Correct → wrong</span><strong>12</strong><div class="bar-track"><span class="bar negative" style="--value:4.7244%"></span></div></div><div class="outcome"><span>Wrong → another wrong label</span><strong>3</strong><div class="bar-track"><span class="bar neutral" style="--value:1.1811%"></span></div></div><p class="calculation">239 − 12 = <b>+227</b> net correct predictions</p></div>
+      <div class="metric-stack"><div class="big-metric reveal"><span class="small-label">Accepted correction precision</span><strong>94.09<span>%</span></strong><p>239 / 254 accepted candidates</p></div><div class="big-metric reveal"><span class="small-label">Macro-F1</span><strong>+3.89<span>pp</span></strong><p>Shadow evaluation improvement</p></div></div>
+    </div>
+    <footer class="slide-foot"><span>Development-set shadow results; main-model predictions unchanged. Not a clinical validation.</span><span>09</span></footer>
+  </section>
+
+  <section class="slide" id="slide-10" data-title="LASER · Method" aria-labelledby="laser-method-title">
+    <header><div class="eyebrow reveal">LASER · 01 / 03</div><h2 class="slide-title reveal" id="laser-method-title">Selective correction with<br><span class="accent">cross-layer evidence</span></h2><p class="slide-lede reveal">Layer disagreement alone does not establish that a revision is reliable.</p></header>
+    <div class="slide-body method-grid">
+      <figure class="media-frame reveal"><button class="zoom-image" type="button" aria-label="Enlarge LASER framework"><img src="assets/laser-framework.webp" alt="LASER: layer-wise readout, evidence-aware arbitration and selective generation" width="1455" height="654"></button></figure>
+      <div class="method-notes"><div class="method-note reveal"><b>01 · Need</b><h3>Should we revise?</h3><p>Read layer distributions through the shared LM head. Estimate correction need with JSD.</p></div><div class="method-note reveal"><b>02 · Support</b><h3>Is evidence reliable?</h3><p>Assess cross-layer support and directional advantage in a shared candidate space.</p></div><div class="method-note reveal"><b>03 · Gate</b><h3>Selective fusion</h3><p>Fuse only when both conditions hold. Otherwise preserve the original distribution.</p></div></div>
+    </div>
+    <footer class="slide-foot"><a href="projects/laser.html">AAAI · Under review · First author ↗</a><span>10</span></footer>
+  </section>
+
+  <section class="slide rose" id="slide-11" data-title="LASER · Token-level behavior" aria-labelledby="laser-cases-title">
+    <header><div class="eyebrow reveal">LASER · 02 / 03</div><h2 class="slide-title reveal" id="laser-cases-title">When to revise.<br><span class="accent">When to preserve.</span></h2></header>
+    <div class="slide-body cases-layout">
+      <figure class="media-frame reveal"><button class="zoom-image" type="button" aria-label="Enlarge LASER token-level cases"><img src="assets/laser-cases.webp" alt="Cat and shoe-rack examples with cross-layer token probabilities, gating and fusion weights" width="2925" height="1226"></button></figure>
+      <div class="case-notes"><div class="reveal"><span class="small-label">Stable evidence</span><h3>“cat” / “shoes”</h3><p>Keep the gate closed and preserve the original distribution.</p></div><div class="reveal"><span class="small-label">Candidate correction</span><h3>“hiding” / “metal”</h3><p>Check correction need and evidence utility before fusion.</p></div></div>
+    </div>
+    <footer class="slide-foot"><span>Token-level diagnostics from the paper; not a full-answer before/after comparison.</span><span>11</span></footer>
+  </section>
+
+  <section class="slide" id="slide-12" data-title="LASER · Evaluation" aria-labelledby="laser-results-title">
+    <header><div class="eyebrow reveal">LASER · 03 / 03</div><h2 class="slide-title reveal" id="laser-results-title">Hallucination reduction<br><span class="accent">without additional training</span></h2></header>
+    <div class="slide-body laser-results">
+      <div class="evaluation-table reveal"><table><caption>Selected LLaVA-1.5 results</caption><thead><tr><th scope="col">Evaluation</th><th scope="col">Comparator</th><th scope="col">LASER</th></tr></thead><tbody><tr><th scope="row">CHAIR<sub>s</sub> ↓ <small>Beam decoding</small></th><td><span>VISTA</span>17.7</td><td class="score">15.4</td></tr><tr><th scope="row">CHAIR<sub>i</sub> ↓ <small>Beam decoding</small></th><td><span>VISTA</span>6.5</td><td class="score">3.9</td></tr><tr><th scope="row">POPE F1 ↑</th><td><span>DeCo</span>86.2</td><td class="score">90.9</td></tr></tbody></table><p class="figure-caption">CHAIR and POPE retain the separate comparators reported in the paper.</p></div>
+      <div class="evaluation-scope"><div class="scope-metric reveal"><strong>5</strong><span>multimodal model families</span></div><div class="scope-metric reveal"><strong>4</strong><span>benchmarks<br>CHAIR / POPE / AMBER / MME</span></div><div class="scope-metric reveal"><strong>0</strong><span>additional training updates</span></div><p class="reveal">Greedy, Beam and Nucleus decoding<br>Component ablations &amp; token-level analysis</p></div>
+    </div>
+    <footer class="slide-foot"><a href="projects/laser.html#method">LASER implementation &amp; evaluation ↗</a><span>12</span></footer>
+  </section>
+
+  <section class="slide closing" id="slide-13" data-title="Closing" aria-labelledby="closing-title">
+    <div class="slide-body closing-wrap"><div><h2 class="reveal" id="closing-title">Thank you.</h2><div class="closing-summary reveal"><a href="#slide-4">CARA</a><a href="#slide-7">EviLoop-AD</a><a href="#slide-10">LASER</a></div><p class="closing-name reveal">Zhishan Tao</p><p class="closing-contact reveal"><a href="mailto:zhishantao@sjtu.edu.cn">zhishantao@sjtu.edu.cn</a><a href="index.html">peach-mountain.github.io ↗</a></p></div></div>
+  </section>
+
+  <div class="deck-ui"><a class="home-link" href="index.html" aria-label="Back to homepage">↖ Home</a><div class="slide-count" role="status" aria-live="polite" aria-atomic="true"><span id="current-count">01</span> / <span id="total-count">13</span></div><nav class="nav-dots" id="nav-dots" aria-label="Slide navigation"></nav><div class="controls"><button class="control fullscreen" id="fullscreen" type="button" aria-label="Enter fullscreen (F)" title="Fullscreen · F">⛶</button><button class="control" id="prev" type="button" aria-label="Previous slide" title="Previous · ←">←</button><button class="control" id="next" type="button" aria-label="Next slide" title="Next · → / Space">→</button></div><div class="progress" aria-hidden="true"><span id="progress-bar"></span></div></div>
+</main>
+<dialog class="image-dialog" aria-label="Enlarged research figure"><button class="dialog-close" type="button" aria-label="Close enlarged figure">×</button><img alt=""><p>Esc to close</p></dialog>
+<noscript><p class="noscript-note">JavaScript is disabled. All slides appear below in reading order.</p></noscript>
+<!-- Content sources: index.html and projects/cara.html, projects/eviloop-ad.html, projects/laser.html.
+     Visual reference: https://selen-suyue.github.io/slides.html. Independently implemented for Zhishan Tao. -->
+</body>
+</html>

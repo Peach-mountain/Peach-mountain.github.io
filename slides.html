@@ -7,7 +7,7 @@
   <meta name="description" content="Zhishan Tao’s research slides: CARA, EviLoop-AD and LASER. Interpretable prediction, evidence-grounded agents and reliable multimodal decoding.">
   <title>Zhishan Tao · Research Slides</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="slides.css?v=20260923-ad-training">
+  <link rel="stylesheet" href="slides.css?v=20260923-ad-figure">
   <script src="slides.js?v=20260922-1" defer></script>
 </head>
 <body>
@@ -40,7 +40,7 @@
     <header><div class="eyebrow reveal">Selected works</div><h2 class="slide-title reveal" id="works-title">Evidence for<br><span class="accent">multimodal decisions</span></h2></header>
     <div class="slide-body work-cards">
       <a class="work-card reveal" href="#slide-4"><div class="work-card-head"><span>01</span><span>CARA</span></div><div class="work-card-media"><img src="assets/cara-framework.webp" alt="CARA framework" width="2706" height="1418"></div><h3>Interpretable prediction</h3><p>Ground collision anticipation in human-readable risk concepts.</p><span class="work-status">ACM Multimedia 2026 · First author</span></a>
-      <a class="work-card reveal" href="#slide-7"><div class="work-card-head"><span>02</span><span>EviLoop-AD</span></div><div class="work-card-media"><img src="assets/ad-training.svg" alt="Patient evidence informs an agent trained with SFT followed by RFT using GRPO" width="720" height="360"></div><h3>Evidence-grounded agents</h3><p>Verify patient evidence before accepting a diagnostic state transition.</p><span class="work-status">Ongoing research</span></a>
+      <a class="work-card reveal" href="#slide-7"><div class="work-card-head"><span>02</span><span>EviLoop-AD</span></div><div class="work-card-media"><img src="assets/ad-backbone.webp" alt="AD multimodal backbone" width="1089" height="590"></div><h3>Evidence-grounded agents</h3><p>Verify patient evidence before accepting a diagnostic state transition.</p><span class="work-status">Ongoing research</span></a>
       <a class="work-card reveal" href="#slide-10"><div class="work-card-head"><span>03</span><span>LASER</span></div><div class="work-card-media"><img src="assets/laser-framework.webp" alt="LASER method" width="1455" height="654"></div><h3>Reliable decoding</h3><p>Revise a token only when cross-layer evidence supports correction.</p><span class="work-status">AAAI · Under review · First author</span></a>
     </div>
     <footer class="slide-foot"><span>Prediction / Verification / Correction</span><span>03</span></footer>
@@ -78,21 +78,15 @@
   </section>
 
   <section class="slide rose" id="slide-7" data-title="EviLoop-AD · SFT &amp; GRPO-RFT" aria-labelledby="ad-core-title">
-    <header><div class="eyebrow reveal">EviLoop-AD · 01 / 03</div><h2 class="slide-title reveal" id="ad-core-title">Agent post-training:<br><span class="accent">SFT → RFT with GRPO</span></h2><p class="slide-lede reveal">Learn evidence-grounded actions from MRI, cognitive assessments and clinical records.</p></header>
-    <div class="slide-body training-body">
-      <div class="training-stages">
-        <article class="training-stage reveal"><span class="small-label">01 · Supervised fine-tuning</span><h3>SFT <span>Agent behavior</span></h3><p>Organize patient evidence and learn structured tool calls, diagnostic outputs and multi-turn interaction.</p><div class="training-sequence"><span>Demonstrations</span><span aria-hidden="true">→</span><span>Behavior initialization</span></div></article>
-        <span class="training-arrow reveal" aria-hidden="true">→</span>
-        <article class="training-stage rft reveal"><span class="small-label">02 · Reinforcement fine-tuning</span><h3>RFT <span>Policy optimization with GRPO</span></h3><p>Sample multiple trajectories for the same patient case. Use group-relative rewards to learn when to verify, revise, stop or abstain.</p><div class="training-sequence"><span>Rollouts</span><span aria-hidden="true">→</span><span>Relative advantage</span><span aria-hidden="true">→</span><span>Policy update</span></div></article>
+    <header><div class="eyebrow reveal">EviLoop-AD · 01 / 03</div><h2 class="slide-title reveal" id="ad-core-title">Multimodal diagnosis<br><span class="accent">SFT &amp; GRPO-based RFT</span></h2></header>
+    <div class="slide-body method-grid ad-method">
+      <figure class="media-frame reveal"><button class="zoom-image" type="button" aria-label="Enlarge AD multimodal backbone"><img src="assets/ad-backbone.webp" alt="AD model architecture combining MRI and clinical text with visual evidence and diagnostic outputs" width="1089" height="590"></button></figure>
+      <div class="method-notes">
+        <div class="method-note reveal"><b>01 · Supervised fine-tuning</b><h3>SFT</h3><p>Learn evidence organization, tool calls and diagnostic responses.</p></div>
+        <div class="method-note reveal"><b>02 · Reinforcement fine-tuning</b><h3>RFT with GRPO</h3><p>Optimize when to verify, revise or abstain through group-relative rewards.</p><p class="ad-rewards"><strong>Rewards</strong><br>Evidence validity<br>Diagnosis consistency<br>Safe abstention<br>Over-correction penalty</p></div>
       </div>
-      <div class="reward-section"><div class="reward-heading reveal"><span class="small-label">Reward design</span><p>Evaluate evidence and decision quality alongside the final diagnosis.</p></div><div class="reward-grid">
-        <article class="reward-item reveal"><h4>Evidence validity</h4><p>Reward valid evidence references; penalize fabricated evidence.</p></article>
-        <article class="reward-item reveal"><h4>Diagnosis consistency</h4><p>Align diagnostic claims with the available patient evidence.</p></article>
-        <article class="reward-item reveal"><h4>Safe abstention</h4><p>Reward appropriate uncertainty when evidence is insufficient.</p></article>
-        <article class="reward-item reveal"><h4>Over-correction penalty</h4><p>Penalize unsupported changes to a reasonable diagnosis.</p></article>
-      </div></div>
     </div>
-    <footer class="slide-foot"><span>SFT initializes agent behavior; GRPO optimizes the policy during RFT.</span><span>07</span></footer>
+    <footer class="slide-foot"><span>MRI + clinical text · Multimodal backbone and agent post-training</span><span>07</span></footer>
   </section>
 
   <section class="slide" id="slide-8" data-title="EviLoop-AD · Agent workflow" aria-labelledby="ad-agent-title">
